@@ -4,7 +4,7 @@ Offline-first shift calendar for iOS and Android. The app runs without an accoun
 
 ## Requirements
 
-- Node.js 22.13 or newer (CI uses Node 24)
+- Node.js 22.13 or newer
 - Expo SDK 58 / React Native 0.88
 - Android Studio for Android development builds; macOS/Xcode for iOS builds
 
@@ -21,7 +21,7 @@ Firebase Analytics uses React Native Firebase and is opt-in. Auto collection and
 
 Native SQLCipher, purchases, and Firebase require a development or store build; Expo Go is not the production runtime. The client purchase handler submits store receipts to the Laravel verifiers and finalizes transactions only after server verification. Store sandbox testing requires real product IDs and store developer accounts.
 
-Run `npm run lint`, `npm test`, and `npx expo export --platform web` for local checks. CI runs TypeScript checks and domain tests on every change. The web export is a development preview; production targets are iOS and Android.
+Android builds are local. iOS builds go through Expo. This repository does not run GitHub Actions.
 
 ## API compatibility
 
